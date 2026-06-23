@@ -1,0 +1,28 @@
+{
+  "log": {
+    "level": "info"
+  },
+  "inbounds": [
+    {
+      "type": "vless",
+      "tag": "vless-in",
+      "listen": "::",
+      "listen_port": 8080,
+      "users": [
+        {
+          "uuid": "741b3b22-9c79-4c9d-9a44-fee116fbb721"
+        }
+      ],
+      "transport": {
+        "type": "ws",
+        "path": "/chat"
+      }
+    }
+  ],
+  "outbounds": [
+    {
+      "type": "direct",
+      "tag": "direct"
+    }
+  ]
+}
